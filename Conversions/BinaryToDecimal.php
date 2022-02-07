@@ -12,14 +12,14 @@
  * @param string $binaryNumber
  * @return int
  */
-function binaryToDecimal($binaryNumber)
+function binaryToDecimal($binaryNumberr)
 {
-    if (!is_numeric($binaryNumber)) {
+    if (!is_numeric($binaryNumberr)) {
         throw new \Exception('Please pass a valid Binary Number for Converting it to a Decimal Number.');
     }
 
     $decimalNumber = 0;
-    $binaryDigits  = array_reverse(str_split($binaryNumber));
+    $binaryDigits  = array_reverse(str_split($binaryNumberr));
 
     foreach ($binaryDigits as $index => $digit) {
         $decimalNumber += $digit * pow(2, $index);
