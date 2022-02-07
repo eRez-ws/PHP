@@ -24,7 +24,6 @@ function binaryToDecimal($binaryNumber)
     foreach ($binaryDigits as $index => $digit) {
         $decimalNumber += $digit * pow(2, $index);
     }
-
     return $decimalNumber;
 }
 
